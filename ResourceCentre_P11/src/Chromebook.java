@@ -11,6 +11,7 @@ public class Chromebook extends Item{
 		return os;
 	}
 	
+	// Vanessa's part ->
 	public String toString(){
 		String output = "";
 		

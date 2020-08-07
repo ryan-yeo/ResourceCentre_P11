@@ -150,6 +150,7 @@ public class ResourceCentre {
 		System.out.println(output);
 	}
 
+	// Vanessa's part ->
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
 		// write your code here
@@ -159,6 +160,7 @@ public class ResourceCentre {
 		}
 		return output;
 	}
+	
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
 		
 		ResourceCentre.setHeader("CHROMEBOOK LIST");

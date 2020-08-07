@@ -12,6 +12,7 @@ public class Item {
 		this.isAvailable = true;
 	}
 	
+	// Vanessa's part ->
 	public static String showAvailability(boolean isAvailable) {
 		String avail;
 
@@ -23,6 +24,7 @@ public class Item {
 		return avail;
 	}
 	
+	// Vanessa's part ->
 	public String toString() {
 		// Write your codes here
 		return String.format("%-10s %-30s %-10s %-10s", getAssetTag(), getDescription(), showAvailability(getIsAvailable()), getDueDate());
