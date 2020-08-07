@@ -137,7 +137,7 @@ public class ResourceCentre {
 		// saj
 		for (int i = 0; i < camcorderList.size(); i++) {
 
-			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", camcorderList.get(i).toString());
+			output += String.format("%-84s\n", camcorderList.get(i).toString());
 		}
 		return output;
 	}
@@ -158,7 +158,7 @@ public class ResourceCentre {
 		// write your code here
 		for (int i = 0; i < chromebookList.size(); i++) {
 
-			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).toString());
+			output += String.format("%-84s\n", chromebookList.get(i).toString());
 		}
 		return output;
 	}
