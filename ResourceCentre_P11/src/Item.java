@@ -24,13 +24,11 @@ public class Item {
 		return avail;
 	}
 	
-	// Vanessa's part ->
+	// Vanessa's part done ->
 	public String toString() {
 		// Write your codes here
 		return String.format("%-10s %-30s %-10s %-10s", getAssetTag(), getDescription(), showAvailability(getIsAvailable()), getDueDate());
 	}
-	
-
 	
 	public String getAssetTag() {
 		return assetTag;
