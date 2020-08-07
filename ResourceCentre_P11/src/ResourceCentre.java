@@ -129,20 +129,20 @@ public class ResourceCentre {
 		return avail;
 	}
 
-	// ================================= Option 1 View
-	// =================================
-	
-	// Vanessa
+
+	// ================================= Option 1 View // ===============================
+
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		String output = "";
 
 		for (int i = 0; i < camcorderList.size(); i++) {
 
 			output += camcorderList.get(i).toString();
+
 		}
 		return output;
 	}
-	
+
 	public static void viewAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		ResourceCentre.setHeader("CAMCORDER LIST");
 		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION", "AVAILABLE",
@@ -158,6 +158,7 @@ public class ResourceCentre {
 		for (int i = 0; i < chromebookList.size(); i++) {
 
 			output += chromebookList.get(i).toString();
+
 		}
 		return output;
 	}
