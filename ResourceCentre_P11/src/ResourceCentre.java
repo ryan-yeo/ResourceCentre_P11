@@ -147,6 +147,16 @@ public class ResourceCentre {
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
 		// write your code here
+		output = displayAllChrome(chromebookList, output);
+		return output;
+	}
+
+	/**
+	 * @param chromebookList
+	 * @param output
+	 * @return
+	 */
+	private static String displayAllChrome(ArrayList<Chromebook> chromebookList, String output) {
 		for (int i = 0; i < chromebookList.size(); i++) {
 
 			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).getAssetTag(),
@@ -159,10 +169,19 @@ public class ResourceCentre {
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
 		
 		ResourceCentre.setHeader("CHROMEBOOK LIST");
+		String output = outputChromebook(chromebookList);
+		System.out.println(output);
+	}
+
+	/**
+	 * @param chromebookList
+	 * @return
+	 */
+	private static String outputChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
 				 "AVAILABLE", "DUE DATE","OPERATING SYSTEM");
 		 output += retrieveAllChromebook(chromebookList);
-		System.out.println(output);
+		return output;
 	}
 
 	//================================= Option 2 Add =================================
