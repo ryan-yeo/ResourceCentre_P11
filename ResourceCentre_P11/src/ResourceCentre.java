@@ -129,8 +129,7 @@ public class ResourceCentre {
 		return avail;
 	}
 
-	// ================================= Option 1 View
-	// =================================
+	// ================================= Option 1 View // ===============================
 	public static String retrieveAllCamcorder(ArrayList<Camcorder> camcorderList) {
 		String output = "";
 
